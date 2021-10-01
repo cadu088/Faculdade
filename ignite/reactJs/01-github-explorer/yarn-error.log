@@ -1,30 +1,20 @@
 Arguments: 
-  C:\Program Files\node.exe C:\Users\Carlos.Rodrigues\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @babel-loader -D
+  C:\Program Files\nodejs\node.exe C:\Users\carlo\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add webpack-cli -D
 
 PATH: 
-  C:\Users\Carlos.Rodrigues\Documents\Carlos\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\Carlos.Rodrigues\Documents\Carlos\cmder\vendor\conemu-maximus5;C:\Users\Carlos.Rodrigues\Documents\Carlos\cmder\vendor\conemu-maximus5\ConEmu;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\Azure Data Studio\bin;C:\Users\judson.junior\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Carlos.Rodrigues\AppData\Local\Microsoft\WindowsApps;C:\Users\Carlos.Rodrigues\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Carlos.Rodrigues\AppData\Roaming\npm;C:\Users\Carlos.Rodrigues\.dotnet\tools;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Carlos.Rodrigues\Documents\Carlos\cmder\vendor\bin;C:\Users\Carlos.Rodrigues\Documents\Carlos\cmder
+  C:\Users\carlo\Documents\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\carlo\Documents\cmder\vendor\conemu-maximus5;C:\Users\carlo\Documents\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files\Java\zulu11.50.19-ca-jdk11.0.12-win_x64\bin;C:\Program Files\Microsoft MPI\Bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\carlo\AppData\Local\Microsoft\WindowsApps;C:\Users\carlo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\carlo\AppData\Roaming\npm;C:\Program Files\Azure Data Studio\bin;C:\Users\carlo\.dotnet\tools;C:\Program Files\heroku\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\carlo\Documents\cmder\vendor\bin;C:\Users\carlo\Documents\cmder
 
 Yarn version: 
   1.22.11
 
 Node version: 
-  14.17.4
+  14.16.1
 
 Platform: 
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@babel-loader: Request "https://registry.yarnpkg.com/@babel-loader" returned a 405
-      at Request.params.callback [as _callback] (C:\Users\Carlos.Rodrigues\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:67001:18)
-      at Request.self.callback (C:\Users\Carlos.Rodrigues\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140763:22)
-      at Request.emit (events.js:400:28)
-      at Request.<anonymous> (C:\Users\Carlos.Rodrigues\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141735:10)
-      at Request.emit (events.js:400:28)
-      at IncomingMessage.<anonymous> (C:\Users\Carlos.Rodrigues\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141657:12)
-      at Object.onceWrapper (events.js:519:28)
-      at IncomingMessage.emit (events.js:412:35)
-      at endReadableNT (internal/streams/readable.js:1317:12)
-      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+  Error: EBUSY: resource busy or locked, rmdir 'C:\Users\carlo\Documents\Repositorios\Faculdade\ignite\reactJs\01-github-explorer\node_modules\.bin'
 
 npm manifest: 
   {
@@ -41,12 +31,13 @@ npm manifest:
     "dependencies": {
       "@babel/preset-react": "^7.14.5",
       "react": "^17.0.2",
-      "yarn": "^1.22.13"
+      "yarn": "^1.22.15"
     },
     "devDependencies": {
       "@babel/cli": "^7.15.7",
       "@babel/core": "^7.15.5",
       "@babel/preset-env": "^7.15.6",
+      "babel-loader": "^8.2.2",
       "webpack-cli": "^4.8.0",
       "webpack-dev-server": "^4.3.0"
     }
@@ -1032,7 +1023,7 @@ Lockfile:
     dependencies:
       "@types/node" "*"
   
-  "@types/json-schema@^7.0.8":
+  "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.8":
     version "7.0.9"
     resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.9.tgz#97edc9037ea0c38585320b28964dde3b39e4660d"
     integrity sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==
@@ -1085,7 +1076,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-3.5.2.tgz#31f29da5ab6e00d1c2d329acf7b5929614d5014d"
     integrity sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==
   
-  ajv@^6.12.5:
+  ajv@^6.12.4, ajv@^6.12.5:
     version "6.12.6"
     resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
     integrity sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==
@@ -1142,6 +1133,16 @@ Lockfile:
     dependencies:
       lodash "^4.17.14"
   
+  babel-loader@^8.2.2:
+    version "8.2.2"
+    resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-8.2.2.tgz#9363ce84c10c9a40e6c753748e1441b60c8a0b81"
+    integrity sha512-JvTd0/D889PQBtUXJ2PXaKU/pjZDMtHA9V2ecm+eNRmmBCMR09a+fmpGTNwnJtFmFl5Ei7Vy47LjBb+L0wQ99g==
+    dependencies:
+      find-cache-dir "^3.3.1"
+      loader-utils "^1.4.0"
+      make-dir "^3.1.0"
+      schema-utils "^2.6.5"
+  
   babel-plugin-dynamic-import-node@^2.3.3:
     version "2.3.3"
     resolved "https://registry.yarnpkg.com/babel-plugin-dynamic-import-node/-/babel-plugin-dynamic-import-node-2.3.3.tgz#84fda19c976ec5c6defef57f9427b3def66e17a3"
@@ -1182,6 +1183,11 @@ Lockfile:
     version "0.6.1"
     resolved "https://registry.yarnpkg.com/batch/-/batch-0.6.1.tgz#dc34314f4e679318093fc760272525f94bf25c16"
     integrity sha1-3DQxT05nkxgJP8dgJyUl+UvyXBY=
+  
+  big.js@^5.2.2:
+    version "5.2.2"
+    resolved "https://registry.yarnpkg.com/big.js/-/big.js-5.2.2.tgz#65f0af382f578bcdc742bd9c281e9cb2d7768328"
+    integrity sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==
   
   binary-extensions@^2.0.0:
     version "2.2.0"
@@ -1339,6 +1345,11 @@ Lockfile:
     version "7.2.0"
     resolved "https://registry.yarnpkg.com/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
     integrity sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==
+  
+  commondir@^1.0.1:
+    version "1.0.1"
+    resolved "https://registry.yarnpkg.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
+    integrity sha1-3dgA2gxmEnOTzKWVDqloo6rxJTs=
   
   compressible@~2.0.16:
     version "2.0.18"
@@ -1539,6 +1550,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.853.tgz#f3ed1d31f092cb3a17af188bca6c6a3ec91c3e82"
     integrity sha512-W4U8n+U8I5/SUaFcqZgbKRmYZwcyEIQVBDf+j5QQK6xChjXnQD+wj248eGR9X4u+dDmDR//8vIfbu4PrdBBIoQ==
   
+  emojis-list@^3.0.0:
+    version "3.0.0"
+    resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-3.0.0.tgz#5570662046ad29e2e916e71aae260abdff4f6a78"
+    integrity sha512-/kyM18EfinwXZbno9FyUGeFh87KC8HRQBQGildHZbEuRyWFOmv1U10o9BBp8XVZDVNNuQKyIGIu5ZYAAXJ0V2Q==
+  
   encodeurl@~1.0.2:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
@@ -1689,6 +1705,15 @@ Lockfile:
       parseurl "~1.3.3"
       statuses "~1.5.0"
       unpipe "~1.0.0"
+  
+  find-cache-dir@^3.3.1:
+    version "3.3.2"
+    resolved "https://registry.yarnpkg.com/find-cache-dir/-/find-cache-dir-3.3.2.tgz#b30c5b6eff0730731aea9bbd9dbecbd80256d64b"
+    integrity sha512-wXZV5emFEjrridIgED11OoUKLxiYjAcqot/NJdAkOhlJ+vGzwhOAfcG5OX1jP+S0PcjEn8bdMJv+g2jwQ3Onig==
+    dependencies:
+      commondir "^1.0.1"
+      make-dir "^3.0.2"
+      pkg-dir "^4.1.0"
   
   find-up@^4.0.0:
     version "4.1.0"
@@ -2122,6 +2147,13 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz#69f6a87d9513ab8bb8fe63bdb0979c448e684660"
     integrity sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==
   
+  json5@^1.0.1:
+    version "1.0.1"
+    resolved "https://registry.yarnpkg.com/json5/-/json5-1.0.1.tgz#779fb0018604fa854eacbf6252180d83543e3dbe"
+    integrity sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==
+    dependencies:
+      minimist "^1.2.0"
+  
   json5@^2.1.2:
     version "2.2.0"
     resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.0.tgz#2dfefe720c6ba525d9ebd909950f0515316c89a3"
@@ -2133,6 +2165,15 @@ Lockfile:
     version "6.0.3"
     resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
     integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
+  
+  loader-utils@^1.4.0:
+    version "1.4.0"
+    resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.4.0.tgz#c579b5e34cb34b1a74edc6c1fb36bfa371d5a613"
+    integrity sha512-qH0WSMBtn/oHuwjy/NucEgbx5dbxxnxup9s4PVXJUDHZBQY+s0NWA9rJf53RBnQZxfch7euUui7hpoAPvALZdA==
+    dependencies:
+      big.js "^5.2.2"
+      emojis-list "^3.0.0"
+      json5 "^1.0.1"
   
   locate-path@^5.0.0:
     version "5.0.0"
@@ -2165,6 +2206,13 @@ Lockfile:
     dependencies:
       pify "^4.0.1"
       semver "^5.6.0"
+  
+  make-dir@^3.0.2, make-dir@^3.1.0:
+    version "3.1.0"
+    resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-3.1.0.tgz#415e967046b3a7f1d185277d84aa58203726a13f"
+    integrity sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==
+    dependencies:
+      semver "^6.0.0"
   
   media-typer@0.3.0:
     version "0.3.0"
@@ -2245,7 +2293,7 @@ Lockfile:
     dependencies:
       brace-expansion "^1.1.7"
   
-  minimist@^1.2.5:
+  minimist@^1.2.0, minimist@^1.2.5:
     version "1.2.5"
     resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
     integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
@@ -2488,7 +2536,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
     integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
   
-  pkg-dir@^4.2.0:
+  pkg-dir@^4.1.0, pkg-dir@^4.2.0:
     version "4.2.0"
     resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-4.2.0.tgz#f099133df7ede422e81d1d8448270eeb3e4261f3"
     integrity sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==
@@ -2721,6 +2769,15 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
     integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
   
+  schema-utils@^2.6.5:
+    version "2.7.1"
+    resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-2.7.1.tgz#1ca4f32d1b24c590c203b8e7a50bf0ea4cd394d7"
+    integrity sha512-SHiNtMOUGWBQJwzISiVYKu82GiV4QYGePp3odlY1tuKO7gPtphAT5R/py0fA6xtbgLL/RvtJZnU9b8s0F1q0Xg==
+    dependencies:
+      "@types/json-schema" "^7.0.5"
+      ajv "^6.12.4"
+      ajv-keywords "^3.5.2"
+  
   schema-utils@^3.1.0:
     version "3.1.1"
     resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-3.1.1.tgz#bc74c4b6b6995c1d88f76a8b77bea7219e0c8281"
@@ -2752,7 +2809,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
     integrity sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
   
-  semver@^6.1.1, semver@^6.1.2, semver@^6.3.0:
+  semver@^6.0.0, semver@^6.1.1, semver@^6.1.2, semver@^6.3.0:
     version "6.3.0"
     resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
     integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
@@ -3128,7 +3185,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/ws/-/ws-8.2.2.tgz#ca684330c6dd6076a737250ed81ac1606cb0a63e"
     integrity sha512-Q6B6H2oc8QY3llc3cB8kVmQ6pnJWVQbP7Q5algTcIxx7YEpc0oU4NBVHlztA7Ekzfhw2r0rPducMUiCGWKQRzw==
   
-  yarn@^1.22.13:
-    version "1.22.13"
-    resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.13.tgz#8789ef23b630fe99b819b044f4b7b93ab1bc1b8f"
-    integrity sha512-G8qG4t7Ef5cLVpzbM3HWWsow4hpfeSCfKtMnjfERmp9V5qSCOKz0uGAIQCM/x3gWfCzH8Bvb4hl3ZfhG/XD1Jg==
+  yarn@^1.22.15:
+    version "1.22.15"
+    resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.15.tgz#3431d5f134d3c752a57a9dd7f5e1167627ca3cc3"
+    integrity sha512-AzoEDxj256BOS/jqDXA3pjyhmi4FRBBUMgYoTHI4EIt2EhREkvH0soPVEtnD+DQIJfU5R9bKhcZ1H9l8zPWeoA==
