@@ -4,6 +4,7 @@ import { Dashboard } from "./components/Dashboard";
 import { useState } from 'react'
 import Modal from 'react-modal';
 import { ModalTransition } from './components/ModalTransation';
+import {  TransactionsProvider } from './TransactionsContext'
 
 Modal.setAppElement('#root');
 
@@ -20,6 +21,7 @@ export function App() {
 
   return (
     <div className="App">
+		<TransactionsProvider>
      <Header onOpenNewTractionModal={handleOpenNewTractionModal}/>
 		 <Dashboard/>
 		 <ModalTransition 
@@ -27,6 +29,8 @@ export function App() {
 		 onRequestClose={handleCloseNewTractionModal}
 		 />
 		 <GlobalStyle/>
+		</TransactionsProvider>
+
     </div>
   );
 }
